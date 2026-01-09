@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
+
+
+.kablammo-logo{
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+  font-size: 2.5rem;
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header nav{
+    background-color: oklch(14.1% 0.005 285.823);
+    color: oklch(97% 0 0);
+
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+
+    padding: 0 10%;
+
+    min-height: 10vh;
+}
+
+.menu-nav-left{
+    flex: 1;
+}
+
+.menu-nav-right{
+    flex: 2;
+}
+
+.menu-nav-left a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-nav-left a img{
+    border-radius: 100%;
+    max-width: 80px;
+}
+
+.menu-nav-right ul{
+    display: flex;
+    text-transform: capitalize;
+    justify-content: flex-end;
+    font-size: 2rem;
+    gap: 10px;
+}
+
+.menu-nav-right ul li a{
+    display: block;
+    padding: 1rem;
+    border-radius: 12px ;
+}
+
+.menu-nav-right ul li a:hover{
+    background-color: oklch(97.015% 0.00011 271.152 / 0.815) ;
+    color: oklch(14.1% 0.005 285.823) ;
+
+}
+
+.menu-nav-right ul li a.btn-contact{
+    border: 1px solid oklch(97.015% 0.00011 271.152);
+    text-align: center;
+    font-weight: 600;
+    padding: 1rem 2rem;
+}
+
+
+.menu-nav-right ul li a.btn-contact:hover{
+    border: 1px solid oklch(97.015% 0.00011 271.152);
+    border-radius: 12px ;
+}
+
+.menu-nav-right ul li:last-child{
+    margin-left: 5%;
+}
+
+
+
+@media (max-width: 875px) {
+    .menu-nav-right ul li a.mobile-hidden{
+        display: none;
+    }
+
+    .menu-nav-right ul{
+    flex-wrap: wrap;
+}
+    
+}
