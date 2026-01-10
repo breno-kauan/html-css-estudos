@@ -11,6 +11,6 @@ No momento estudando o uso de flexbox e aprofundando o uso do css em html semant
 
 Observações:
 - Estudar o uso de animações (principalmente em botões através do hover)
-- Estudar gradient, me salvou na hero com a imagem do background enem sabia que tinha como
-- Revisar font/cores, nomomento ta sendo GEORGIA e amarelo e preto, mas sinto q n tá encaixando 
+- Estudar gradient, me salvou na hero com a imagem do background e nem sabia que tinha como
+- Revisar font/cores, no momento ta sendo GEORGIA e amarelo e preto, mas sinto q n tá encaixando 
 
