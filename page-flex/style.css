@@ -1,0 +1,88 @@
+
+/* ==================================
+    HEADER STYLES
+================================== */
+header .nav{
+    background-color: #d9af32d7;
+    color: #0D0D0D;
+    display: flex;
+    padding: 1% 5%;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+} 
+
+header .nav a span{
+    color: #0D0D0D;
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+header .nav ul{
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+header .nav ul li{
+    display: block;
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+header .nav ul li:hover{
+    background-color: #BF9A2C;
+
+}
+
+/* ==================================
+    HERO STYLES
+================================== */
+
+.content-hero{
+    min-height: calc(100vh - 16vh);
+    background-image: 
+        linear-gradient(rgba(0,0,0, 0.8), 
+        rgba(0,0,0,0.5)), 
+        url('../page-flex/img/hero-img-opacity.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-hero .hero-text{
+    max-width: 50%;
+    color: #e2e2e2;
+}
+
+.content-hero h1{
+    font-size: 6rem;
+}
+
+.content-hero p{
+    font-size: 3rem;
+    margin: 1.5rem 0 4rem 0;
+
+}
+
+.content-hero a{
+    border: 2px solid #d9af32d7;
+    border-radius: 1rem;
+    font-size: 3rem;
+    padding: 1rem 3rem ;
+    text-transform: capitalize;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.content-hero a:hover{
+    background-color: #d9af32d7;
+    font-weight: bold;
+}
