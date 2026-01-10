@@ -7,4 +7,10 @@ Aqui ficam:
 - Exercícios
 - Testes de layout e responsividade
 
-No momento estudando o uso de flexbox e aprofundando o usodo css em html semantico
+No momento estudando o uso de flexbox e aprofundando o uso do css em html semantico
+
+Observações:
+- Estudar o uso de animações (principalmente em botões através do hover)
+- Estudar gradient, me salvou na hero com a imagem do background enem sabia que tinha como
+- Revisar font/cores, nomomento ta sendo GEORGIA e amarelo e preto, mas sinto q n tá encaixando 
+
