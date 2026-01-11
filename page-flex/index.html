@@ -13,10 +13,11 @@
 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="queries.css">
 
   <!-- <a href="https://www.flaticon.com/br/icones-gratis/envio" title="envio ícones">Envio ícones criados por SprSprK - Flaticon</a> -->
 
-  <!-- projeto criado em 09/01/2026 -->
+  <!-- projeto criado em 09/01/2026 finalizado em 10/01/2026 -->
 
 </head> 
 <body>
@@ -31,6 +32,11 @@
 
         <div class="right-nav">
             <ul>
+                <div class="menu">
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>   
+                </div>
                 <li><a href="#">navigation</a></li>
                 <li><a href="#">navigation</a></li>
                 <li><a href="#">navigation</a></li>
@@ -53,51 +59,77 @@
 
     <div class="content-line">
         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil blanditiis soluta facilis assumenda dolores!</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ipsum iusto, fugiat magni consequuntur ipsa corporis culpa placeat laboriosam odit modi deserunt natus officiis optio consequatur, sapiente animi? Exercitationem, dolore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ipsum iusto, fugiat magni consequuntur ipsa corporis culpa placeat laboriosam odit modi deserunt natus officiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil blanditiis soluta facilis assumenda dolores! Lorem ioptio consequatur, sapiente animi? Exercitationem, dolore.</p>
+        <p>orem ipsum dolor sit amet consectetur adipisicing elit. Doloorem ipsum dolor sit amet consectetur adipisicing elit. Doloorem ipsum dolor sit amet consectetur adipisicing elit. Dolo</p>
     </div>
 
     <div class="about-content">
-        <div class="about-image">
-            <img src="" alt="imagem de um entregador de serviços">
+        <div class="about-img">
         </div>
         <div class="about-text">
             <h2>Sobre nós</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil blanditiis soluta facilis assumenda dolores! Lorem ipsum dolor sit amet consectetur </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum soluta veniam sed, cumque aliquid sint officiis, voluptatibus voluptatem perspiciatis error fuga vel quam at, magni quidem molestiae sapiente dolore voluptates aspernatur numquam quae reiciendis dignissimos inventore. Earum sit molestias provident voluptas dicta magni? Officia, molestiae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur sint expedita ipsa blanditiis ut excepturi nemo fuga quis dignissimos. Alias repellat ea nam rem eos natus, sequi, possimus illum pariatur iure ex libero nobis, nemo eum ab dolores exercitationem dolor consequuntur officia odit? Similique ipsam cupiditate quis exercitationem tenetur, eaque vitae.</p>
+            <a href="#" class="btn-about">link to about</a>
         </div>
     </div>
 
-    <div class="services-cards">
-        <div class="service-card">
-            <img src="" alt="serviço 1">
+    <div class="services">
+        <h2>nossos serviços</h2>
+        <div class="services-cards">
+            <div class="card">
+            <img src="../page-flex/img/services1.jpg" alt="serviço 1">
             <h3>Serviço 1</h3>
-            <p>Descrição do serviço 1.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, accusantium ratione architecto autem aperiam natus eum quos praesentium necessitatibus earum placeat debitis aliquam quis voluptate, nemo consequuntur corporis officiis voluptates!</p>
+            <a href="#" class="btn-services">services cta</a>
         </div>
-        <div class="service-card">
-            <img src="" alt="">
+        <div class="card">
+            <img src="../page-flex/img/services2.jpg" alt="serviço 2">
             <h3>Serviço 2</h3>
-            <p>Descrição do serviço 2.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, accusantium ratione architecto autem aperiam natus eum quos praesentium necessitatibus earum placeat debitis aliquam quis voluptate, nemo consequuntur corporis officiis voluptates!</p>
+            <a href="#" class="btn-services">services cta</a>
         </div>
-        <div class="service-card">
-            <img src="" alt="">
-            <h3>Serviço 3</h3>
-            <p>Descrição do serviço 3.</p>
+        <div class="card">
+            <img src="../page-flex/img/services3.jpg" alt="serviço 2">
+            <h3>Serviço 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, accusantium ratione architecto autem aperiam natus eum quos praesentium necessitatibus earum placeat debitis aliquam quis voluptate, nemo consequuntur corporis officiis voluptates!</p>
+            <a href="#" class="btn-services">services cta</a>
+        </div>
         </div>
     </div>
 
-    <div class="content-line">
+    <div class="content-line line2">
         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil blanditiis soluta facilis assumenda dolores!</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ipsum iusto, fugiat magni consequuntur ipsa corporis culpa placeat laboriosam odit modi deserunt natus officiis optio consequatur, sapiente animi? Exercitationem, dolore.</p>
     </div>
 
-    <div class="contact-cta">
-        <h2>Pronto para começar?</h2>
-        <p>Entre em contato conosco hoje mesmo e descubra como podemos ajudar você a alcançar seus objetivos.</p>
-        <a href="#" class="btn-contact-cta">contate-nos</a>
+    <div class="contact">
+        <form action="#" method="post" class="form-contact"> <!-- get busca, post cria-->
+            <h2>duvidas? entre em contato</h2>
+
+            <div class="inp-form">
+              <label for="nome">nome:</label>
+              <input type="text" id="nome" name="nome" required aria-describedby="nome-error">
+              <small id="nome-error" hidden> lorem ipsulum </small>
+            </div>
+            <div class="inp-form">
+              <label for="email">email:</label>
+              <input type="text"  id="email" name="email" required aria-describedby="email-help email-error"/>
+              <small id="email-error" hidden> lorem ipsulum </small>
+            </div>
+
+            <div class="inp-form">
+              <label for="contact">escreva aqui:</label>
+              <textarea name="contact" id="contact" required aria-describedby="contact-error"></textarea> 
+              <small id="contact-error" hidden> lorem ipsulum </small>
+            </div>
+        
+            <button type="submit">enviar solicitação</button>
+        </form>
     </div>
   </main>
 
   <footer>
-    <h4>creditos</h4>
     <p>&copy; 2026 Melior. Todos os direitos reservados.</p>
   </footer>
 
