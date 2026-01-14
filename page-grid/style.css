@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Uncial+Antiqua&display=swap');
+
+.uncial-antiqua-regular {
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--color-adjacente);
+}
+
+:root {
+  --color-primaria: #dd6536;
+  --color-secundaria: #e8dfca;
+  --color-adjacente: #201b17;
+
+  --text-size-base: 1.6rem;
+  --text-size-h1: 3.2rem;
+  --text-size-h2: 2.1rem;
+  --text-size-h3: 1.85rem;
+}
+
+/* ============================================= */
+
+.nav{
+    background-color: var(--color-primaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+.logo a span{
+    color: var(--color-secundaria);
+    font-size: 3rem;
+}
+
+.nav-link ul{
+    display: flex;
+    align-items: center;
+    font-size: var(--text-size-h2);
+    gap: 2rem;
+    text-transform: capitalize;
+}
+
+.nav-link ul li a{
+    color: var(--color-secundaria);
+    display: block;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav-social{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-social a img{
+    width: 24px;
+    height: 24px;
+}
+
+
