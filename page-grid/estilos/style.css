@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Uncial+Antiqua&display=swap');
+
+.uncial-antiqua-regular {
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --color-primaria: #da541fb9;
+  --color-secundaria: #e8dfca;
+  --color-adjacente: #201b17;
+
+  --text-size-base: 1.6rem;
+  --text-size-h1: 3.2rem;
+  --text-size-h2: 2.1rem;
+  --text-size-h3: 1.85rem;
+}
+
+body {
+  background-color: var(--color-secundaria);
+}
+
+/* ============================================= */
+
+.nav{
+    background-color: var(--color-primaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+    max-height: 8rem;
+}
+
+.hamburguer-line{
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-secundaria);
+    margin: 4px 0;
+    display: none;
+}
+
+.logo a span{
+    color: var(--color-secundaria);
+    font-size: 3rem;
+}
+
+.nav-link ul{
+    display: flex;
+    align-items: center;
+    font-size: var(--text-size-h2);
+    gap: 2rem;
+    text-transform: capitalize;
+}
+
+.nav-link ul li a{
+    color: var(--color-secundaria);
+    display: block;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav-social{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-social a img{
+    width: 24px;
+    height: 24px;
+}
+
+
+/* ======================================= */
+
+.hero{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 8rem);
+    padding: 5%;
+}
+
+.left-hero{
+    background-image: 
+    linear-gradient(
+        rgba(49, 36, 1, 0.37), 
+        rgba(68, 33, 4, 0.623)), 
+        url("../img/vintage1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100%;
+    border-radius:30px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 2rem;
+}
+
+.link-hero{
+    width: 45%;
+    height: 8%;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link1{
+    background-color: var(--color-secundaria);
+    color: var(--color-adjacente);
+    padding: 1rem .5rem;
+}
+
+.link2{
+    background-color: var(--color-adjacente);
+    color: var(--color-secundaria);
+    padding: 1rem .5rem;
+}
+
+.link1 a, .link2 a{
+    margin-left: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.link1 img, .link2 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transform: rotate(50deg);
+}
+
+/* ========================= */
+
+.right-hero{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+.hero-title{
+    background-color: var(--color-adjacente);
+    color: var(--color-secundaria);
+    border-radius:30px;
+    height: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.hero-title h1{
+    font-size: var(--text-size-h1);
+    text-align: justify;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero-title p{
+    font-size: var(--text-size-base);
+    text-align: justify;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero-img-bonus{
+    height: 50%;
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-img1{
+    background-image:
+    linear-gradient(
+        rgba(49, 36, 1, 0.199), 
+        rgba(68, 33, 4, 0.377)),
+         url("../img/vintage2.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 2% ;
+}
+
+.hero-img2{
+    background-image:
+    linear-gradient(
+         rgba(100, 74, 2, 0.199), 
+        rgba(68, 33, 4, 0.596)),
+         url("../img/vintage3.png");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 2% ;
+}
+
+.hero-img1 p, .hero-img2 p{
+    font-size: 3rem;
+    color: var(--color-secundaria);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* ======================= */
+
+.line-text{
+    height: 30vh;
+
+    padding: 0 5%;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.line-text span{
+    border: 2px solid var(--color-primaria); 
+    border-radius: 50px;
+    padding: 0 1%;
+}
